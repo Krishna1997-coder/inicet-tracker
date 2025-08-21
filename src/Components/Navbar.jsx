@@ -29,7 +29,12 @@ export default function Navbar({ setActiveTab }) {
         >
           Mock Test
         </button>
+        <button
+          onClick={() => setActiveTab("adaptive")}
+          className="text-white hover:bg-blue-700 px-3 py-2 rounded"
+        >
+          Adaptive Planner
+        </button>
       </div>
     </nav>
   );
-}
