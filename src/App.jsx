@@ -4,6 +4,7 @@ import TopicForm from './Components/TopicForm.jsx'
 import StudyLogForm from './Components/StudyLogForm.jsx'
 import MockTestForm from './Components/MockTestForm.jsx'
 import ProgressDashboard from './Components/ProgressDashboard.jsx'
+import AdaptivePlannerSupabase from './Components/AdaptivePlannerSupabase.jsx'
 
 export default function App() {
   const [activeTab, setActiveTab] = useState("dashboard")
@@ -16,6 +17,7 @@ export default function App() {
         {activeTab === "topics" && <TopicForm />}
         {activeTab === "studylog" && <StudyLogForm />}
         {activeTab === "mocktest" && <MockTestForm />}
+        {activeTab === "adaptive" && <AdaptivePlannerSupabase />}
       </div>
     </div>
   )
