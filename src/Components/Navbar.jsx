@@ -38,3 +38,4 @@ export default function Navbar({ setActiveTab }) {
       </div>
     </nav>
   );
+}
