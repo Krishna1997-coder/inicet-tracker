@@ -1,41 +1,32 @@
 import React from "react";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 
 export default function Navbar({ setActiveTab }) {
   return (
-    <nav className="navbar bg-blue-600 text-white px-4 py-3">
-      <h1 className="text-xl font-bold">INI-CET Study Tracker</h1>
-      <div>
-        <button
-          onClick={() => setActiveTab("dashboard")}
-          className="text-white hover:bg-blue-700 px-3 py-2 rounded"
-        >
+    <AppBar position="static" color="primary">
+      <Toolbar>
+        <Typography variant="h6" sx={{ flexGrow: 1 }}>
+          INI-CET Study Tracker
+        </Typography>
+        <Button color="inherit" onClick={() => setActiveTab("dashboard")}>
           Dashboard
-        </button>
-        <button
-          onClick={() => setActiveTab("topics")}
-          className="text-white hover:bg-blue-700 px-3 py-2 rounded"
-        >
+        </Button>
+        <Button color="inherit" onClick={() => setActiveTab("topics")}>
           Topics
-        </button>
-        <button
-          onClick={() => setActiveTab("studylog")}
-          className="text-white hover:bg-blue-700 px-3 py-2 rounded"
-        >
+        </Button>
+        <Button color="inherit" onClick={() => setActiveTab("studylog")}>
           Study Log
-        </button>
-        <button
-          onClick={() => setActiveTab("mocktest")}
-          className="text-white hover:bg-blue-700 px-3 py-2 rounded"
-        >
+        </Button>
+        <Button color="inherit" onClick={() => setActiveTab("mocktest")}>
           Mock Test
-        </button>
-        <button
-          onClick={() => setActiveTab("adaptive")}
-          className="text-white hover:bg-blue-700 px-3 py-2 rounded"
-        >
+        </Button>
+        <Button color="inherit" onClick={() => setActiveTab("adaptive")}>
           Adaptive Planner
-        </button>
-      </div>
-    </nav>
+        </Button>
+      </Toolbar>
+    </AppBar>
   );
 }
